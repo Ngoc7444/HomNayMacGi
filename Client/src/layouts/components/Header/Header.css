@@ -1,0 +1,104 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ddd1d1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.header__logo__link {
+  text-decoration: none;
+}
+
+.header__logo__img {
+  width: 120px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.header__menu__list {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header__menu__item {
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.header__menu__item:hover {
+  color: #ff9e9e;
+}
+
+.login_signup {
+  margin-left: auto;
+}
+
+.user-login_signup {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.user-login_signup:hover {
+  color: #ff9e9e;
+  background: #fff;
+}
+
+.popper-container {
+  display: none; /* Ẩn popper container ban đầu */
+  position: absolute;
+  /* top: 100%; */
+  right: 0;
+  z-index: 999;
+  background-color: #ffffff; /* Màu nền */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  border-radius: 5px; /* Bo tròn góc */
+  padding: 10px; /* Khoảng cách lề bên trong */
+}
+
+.popper-container.show {
+  display: block; /* Hiển thị popper container khi có lớp 'show' */
+}
+
+.popper-item {
+  display: block;
+  padding: 8px 12px; /* Khoảng cách lề */
+  color: #333333; /* Màu chữ */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  border: none; /* Loại bỏ viền */
+  background-color: transparent; /* Màu nền trong suốt */
+  cursor: pointer; /* Biến con trỏ thành hình cửa sổ */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.popper-item:hover {
+  background-color: #f0f0f0; /* Màu nền khi di chuột qua */
+}

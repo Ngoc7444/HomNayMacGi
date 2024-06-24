@@ -1,0 +1,138 @@
+/* FashionConsultant.css */
+
+.fashion-consultant-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+}
+
+.fashion-consultant-title {
+  text-align: center;
+  color: #333;
+}
+
+.fashion-consultant-section {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.fashion-consultant-header {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+.fashion-consultant-option-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.fashion-consultant-option-item {
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.fashion-consultant-option-item.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.fashion_consultant-buttons {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.fashion_consultant-buttons button {
+  margin-left: 10px;
+  padding: 8px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fashion_consultant-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.fashion-consultant_color-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fashion-consultant_color-option {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Define colors for each color option */
+.white {
+  background-color: #ffffff;
+}
+.red {
+  background-color: #ff0000;
+}
+.purple {
+  background-color: #800080;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.black {
+  background-color: #000000;
+}
+.gray {
+  background-color: #808080;
+}
+.blue {
+  background-color: #0000ff;
+}
+.olive {
+  background-color: #808000;
+}
+.indigo {
+  background-color: #4b0082;
+}
+.brown {
+  background-color: #a52a2a;
+}
+.orange {
+  background-color: #ffa500;
+}
+.beige {
+  background-color: #f5f5dc;
+}
+.green {
+  background-color: #008000;
+}
+.pink {
+  background-color: #ffc0cb;
+}
+
+/* Styling for selected color */
+.selected {
+  border: 2px solid #007bff;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}

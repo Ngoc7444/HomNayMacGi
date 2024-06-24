@@ -1,0 +1,104 @@
+.admin-sidebar {
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.admin-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.admin-sidebar__logo {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.admin-sidebar__logo img {
+  width: 50%;
+}
+
+.admin-sidebar__user {
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #555;
+}
+
+.admin-sidebar__menu {
+  align-items: center;
+  overflow: auto;
+}
+
+.admin-sidebar__menu__dashboard {
+  border-bottom: 1px solid #555;
+}
+
+.admin-sidebar__menu__dashboard a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding-left: 20px;
+}
+
+.admin-sidebar__menu__item {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-bottom: 1px solid #555;
+}
+
+.admin-sidebar__menu__item:last-child {
+  border-bottom: none;
+}
+
+.admin-sidebar__menu__sub {
+  margin-top: 5px;
+}
+
+.admin-sidebar__menu__sub__item {
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.admin-sidebar__menu__sub__item span {
+  cursor: pointer;
+}
+
+.admin-sidebar__menu__sub__item:hover {
+  background-color: #555;
+}
+
+/* Link styles */
+.admin-sidebar__menu__item a,
+.admin-sidebar__menu__sub__item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  padding-left: 20px;
+}
+
+.admin-sidebar__menu__item a:hover,
+.admin-sidebar__menu__sub__item a:hover {
+  background-color: #555;
+}
+
+.admin-sidebar__menu::-webkit-scrollbar {
+  width: 6px;
+}
+.admin-sidebar__menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #0a599999;
+}
+.admin-sidebar__menu::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #ffffff61;
+}

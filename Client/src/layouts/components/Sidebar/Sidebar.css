@@ -1,0 +1,120 @@
+.sidebar {
+  position: fixed;
+  top: 80px; /* Adjusts the top position to be 80px from the header */
+  left: 0;
+  width: 250px; /* Adjust this width as needed */
+  height: calc(100vh - 80px); /* Full height minus the 80px offset */
+  background-color: #ddd1d1; /* Light background color */
+  padding: 20px;
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for better visibility */
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.sidebar-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h3 {
+  cursor: pointer; /* Makes the section headers clickable */
+  margin-bottom: 10px;
+}
+
+.filter-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0; /* Initially hides the list */
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Smooth transition for expanding/collapsing */
+}
+
+.filter-section ul.active {
+  max-height: 500px; /* Large enough value to show the full list */
+}
+
+.filter-section ul li {
+  margin-bottom: 10px;
+  cursor: pointer; /* Makes the list items clickable */
+}
+
+.filter-section ul li.selected {
+  font-weight: bold;
+}
+
+.color-list .color-option {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-list .color-option.white {
+  background-color: white;
+}
+.color-list .color-option.red {
+  background-color: red;
+}
+.color-list .color-option.purple {
+  background-color: purple;
+}
+.color-list .color-option.yellow {
+  background-color: yellow;
+}
+.color-list .color-option.black {
+  background-color: black;
+}
+.color-list .color-option.gray {
+  background-color: gray;
+}
+.color-list .color-option.blue {
+  background-color: blue;
+}
+.color-list .color-option.olive {
+  background-color: olive;
+}
+.color-list .color-option.indigo {
+  background-color: indigo;
+}
+.color-list .color-option.brown {
+  background-color: brown;
+}
+.color-list .color-option.orange {
+  background-color: orange;
+}
+.color-list .color-option.beige {
+  background-color: beige;
+}
+.color-list .color-option.green {
+  background-color: green;
+}
+.color-list .color-option.pink {
+  background-color: pink;
+}
+
+.color-list .color-option.selected {
+  border: 2px solid #000;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #0a599999;
+}
+.sidebar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #ffffff61;
+}
