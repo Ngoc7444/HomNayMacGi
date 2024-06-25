@@ -34,7 +34,6 @@ export const getAllproduct = async ({ skip, limit }) => {
   }
 };
 
-
 export const createNewProduct = (body, fileData) =>
   new Promise(async (resolve, reject) => {
     try {
@@ -46,7 +45,7 @@ export const createNewProduct = (body, fileData) =>
       console.log("Response from findOrCreate:", response);
       resolve({
         err: response[1] ? 0 : 1,
-        mess: response[1] ? "created" : "can't Create new Product",
+        mess: response[1] ? "Tạo thành công" : "Tạo sản phẩm thất bại",
       });
       if (fileData && !response[1])
         cloudinary.uploader.destroy(fileData.filename);
@@ -70,8 +69,8 @@ export const updateProduct = ({ id_pr, ...body }, fileData) =>
         err: response[0] > 0 ? 0 : 1,
         mess:
           response[0] > 0
-            ? `${response[0]} product update`
-            : "can't update Product",
+            ? `${response[0]} sản phẩm đã được cập nhật`
+            : "Không thể cập nhật sản phẩm",
       });
       if (fileData && response[0] === 0)
         cloudinary.uploader.destroy(fileData.filename);

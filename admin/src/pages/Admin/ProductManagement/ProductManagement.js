@@ -72,7 +72,7 @@ const ProductManagement = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button onClick={() => setIsAddFormOpen(!isAddFormOpen)}>
-              {isAddFormOpen ? "" : "Thêm sản phẩm"}
+              {isAddFormOpen ? "Thêm sản phẩm" : "Thêm sản phẩm"}
             </button>
           </div>
           <table className="table">

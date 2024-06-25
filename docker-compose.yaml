@@ -1,0 +1,36 @@
+services:
+  app:
+    build: ./Server-master
+    ports:
+      - "81:81"
+    environment:
+      - NODE_ENV=development
+      - DB_USERNAME=root
+      - DB_PASSWORD=null
+      - DB_DATABASE=propose_fs
+      - DB_HOST=localhost
+      - DB_DIALECT=mysql
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: propose_fs
+    ports:
+      - "3306:3306"
+  client:
+    build:
+      context: ./Client
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    container_name: client_container
+
+  admin:
+    build:
+      context: ./admin
+      dockerfile: Dockerfile
+    ports:
+      - "82:82"
+    container_name: admin_container
