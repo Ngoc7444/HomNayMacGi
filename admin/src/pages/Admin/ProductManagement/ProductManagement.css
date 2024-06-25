@@ -1,9 +1,8 @@
 .table-pm {
-  width: 80%;
+  width: 83%;
   padding: 20px;
   position: absolute;
   right: 0px;
-  top: 40px;
 }
 
 .table {
@@ -64,12 +63,26 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Đặt chiều rộng cho modal-content */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo các phần tử wrap nếu quá dài */
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa label và input */
 }
 
 .close {
-  position: relative;
-  top: 0px;
-  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 1000;
+  padding: 0 30px;
   cursor: pointer;
 }
 
@@ -85,8 +98,9 @@ form {
 
 input[type="text"],
 input[type="file"],
-input[type="email"] {
-  width: 100%;
+input[type="number"],
+input[type="email"],
+select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -114,10 +128,6 @@ label img {
 
 .update-product-form h3 {
   margin-bottom: 10px;
-}
-
-.form-group {
-  margin-bottom: 15px;
 }
 
 .form-group label {

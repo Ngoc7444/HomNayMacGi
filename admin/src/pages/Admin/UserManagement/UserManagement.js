@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import "./UserManagement.css";
 import AdminHeader from "../../../AdminLayout/components/AdminHeader/AdminHeader";
 import AdminSideBar from "../../../AdminLayout/components/AdminSideBar/AdminSideBar";
@@ -13,8 +12,6 @@ const UserManagement = () => {
   const [isUpdateFormOpen, setIsUpdateFormOpen] = useState(false); // State to control the modal
   const [userData, setUserData] = useState(null); // State to hold the user data being edited
   const [searchTerm, setSearchTerm] = useState("");
-
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUsers = async () => {

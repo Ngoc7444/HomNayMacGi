@@ -100,7 +100,7 @@ const ProductManagement = () => {
                     <img
                       src={product.imageProduct}
                       alt={product.productName}
-                      style={{ width: "25%", height: "25%" }}
+                      style={{ width: "100%", height: "30%" }}
                     />
                   </td>
                   <td>{product.id_pr}</td>

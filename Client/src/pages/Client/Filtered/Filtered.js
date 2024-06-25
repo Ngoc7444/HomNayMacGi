@@ -12,6 +12,7 @@ const Filtered = () => {
   const [error, setError] = useState(null);
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  // eslint-disable-next-line
   const [totalPages, setTotalPages] = useState(1);
 
   const searchTerm = params.get("searchTerm");

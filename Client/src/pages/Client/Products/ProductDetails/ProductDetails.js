@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./ProductDetails.css";
 import { Link } from "react-router-dom";
-import WeatherForecast from "../../../../layouts/components/WeatherForecast/WeatherForecast";
 import Header from "../../../../layouts/components/Header/Header";
 const ProductDetail = () => {
   const { id_pr } = useParams();

@@ -3,6 +3,7 @@
   align-items: center;
   padding: 0 20px;
   height: 60px;
+  background-color: #ddd1d1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
@@ -34,7 +35,7 @@
   height: 100%;
   border: none;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #ddd1d1;
 }
 
 .icon-span {

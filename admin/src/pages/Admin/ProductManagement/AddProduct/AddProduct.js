@@ -114,32 +114,28 @@ const AddProduct = ({ setIsAddFormOpen }) => {
             type="text"
             required
           />
-          <input
+
+          {/* Thay thế input "Đi đâu" bằng select */}
+
+          <select
             name="sub_cat"
-            placeholder="Loại"
             value={formData.sub_cat}
             onChange={handleInputChange}
-            type="text"
             required
-          />
-          <input
-            name="code_cat"
-            placeholder="Mã loại"
-            value={formData.code_cat}
-            onChange={handleInputChange}
-            type="text"
-            required
-          />
-
-          <input
-            name="soluong"
-            placeholder="Số lượng"
-            value={formData.soluong}
-            onChange={handleInputChange}
-            type="number"
-            required
-          />
-          {/* Thay thế input "Đi đâu" bằng select */}
+          >
+            <option value="">Phân loại chi tiết</option>
+            <option value="T-shirt">T-shirt</option>
+            <option value="Jersey">Jersey</option>
+            <option value="Shirt">Shirt</option>
+            <option value="Hoodie">Hoodie</option>
+            <option value="Crop hoodie">Crop hoodie</option>
+            <option value="Short">Short</option>
+            <option value="Pant">Pant</option>
+            <option value="Gi-lê">Gi-lê</option>
+            <option value="Thrift Bag">Thrift Bag</option>
+            <option value="Jacket & Coat">Jacket & Coat</option>
+            <option value="Wide Leg pants">Wide Leg pants</option>
+          </select>
           <select
             name="size"
             value={formData.size}
@@ -154,18 +150,41 @@ const AddProduct = ({ setIsAddFormOpen }) => {
             <option value="XXL">XXL</option>
           </select>
 
+          <input
+            name="soluong"
+            placeholder="Số lượng"
+            value={formData.soluong}
+            onChange={handleInputChange}
+            type="number"
+            required
+          />
+
           {/* Thay thế input "Đi đâu" bằng select */}
+          <select
+            name="code_cat"
+            value={formData.code_cat}
+            onChange={handleInputChange}
+            required
+          >
+            <option value="">Loại</option>
+            <option value="Top">Top</option>
+            <option value="Bottom">Bottom</option>
+            <option value="Outerwear">Outerwear</option>
+            <option value="Handbag">Handbag</option>
+          </select>
           <select
             name="goWhere"
             value={formData.goWhere}
             onChange={handleInputChange}
             required
           >
-            <option value="">Chọn Đi đâu</option>
-            <option value="Công việc">Công việc</option>
+            <option value="">Chọn nơi để đi</option>
+            <option value="Công sở">Công sở</option>
             <option value="Thể thao">Thể thao</option>
             <option value="Hẹn hò">Hẹn hò</option>
             <option value="Du lịch">Du lịch</option>
+            <option value="Dự tiệc">Dự tiệc</option>
+            <option value="Lựa chọn khác">Lựa chọn khác</option>
           </select>
 
           {/* Thay thế input "Phong cách" bằng select */}
@@ -178,11 +197,12 @@ const AddProduct = ({ setIsAddFormOpen }) => {
             <option value="">Chọn Phong cách</option>
             <option value="Năng động">Năng động</option>
             <option value="Giản dị">Giản dị</option>
-            <option value="Thanh lịch">Thanh lịch</option>
+            <option value="Hiện đại">Hiện đại</option>
             <option value="Cổ điển">Cổ điển</option>
             <option value="Đường phố">Đường phố</option>
             <option value="Lãng mạng">Lãng mạng</option>
             <option value="Trẻ trung">Trẻ trung</option>
+            <option value="Lựa chọn khác">Lựa chọn khác</option>
           </select>
 
           {/* Thay thế input "Sự kiện đặc biệt" bằng select */}
@@ -192,12 +212,14 @@ const AddProduct = ({ setIsAddFormOpen }) => {
             onChange={handleInputChange}
             required
           >
-            <option value="">Chọn Sự kiện đặc biệt</option>
+            <option value="">Sự kiện đặc biệt</option>
             <option value="Tết">Tết</option>
-            <option value="Lễ tình nhân">Lễ tình nhân</option>
+            <option value="Noel">Noel</option>
             <option value="Triển lãm">Triển lãm</option>
             <option value="Lễ hội">Lễ hội</option>
-            <option value="Sinh nhật">Sinh nhật</option>
+            <option value="Đám cưới">Đám cưới</option>
+            <option value="Sinh nhật">Sinh nhật</option>\
+            <option value="Lựa chọn khác">Lựa chọn khác</option>
           </select>
 
           {/* Thêm mục chọn màu */}
