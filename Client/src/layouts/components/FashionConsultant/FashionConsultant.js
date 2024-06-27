@@ -92,11 +92,11 @@ const FashionConsultant = () => {
           >
             <li
               className={`fashion-consultant-option-item ${
-                selectedCategory.includes("Công việc") ? "selected" : ""
+                selectedCategory.includes("Công sở") ? "selected" : ""
               }`}
-              onClick={() => handleCategoryChange("Công việc")}
+              onClick={() => handleCategoryChange("Công sở")}
             >
-              Công việc
+              Công sở
             </li>
             <li
               className={`fashion-consultant-option-item ${
@@ -121,6 +121,13 @@ const FashionConsultant = () => {
               onClick={() => handleCategoryChange("Du lịch")}
             >
               Du lịch
+            </li>
+            <li
+              className={`fashion-consultant-option-item 
+            ${selectedCategory.includes("Dự tiệc") ? "selected" : ""}`}
+              onClick={() => handleCategoryChange("Dự tiệc")}
+            >
+              Dự tiệc
             </li>
           </ul>
           <div className="fashion_consultant-buttons">
@@ -158,8 +165,17 @@ const FashionConsultant = () => {
               }`}
               onClick={() => handleStyleChange("Thanh lịch")}
             >
-              Thanh lịch
+              Giản dị
             </li>
+            <li
+              className={`fashion-consultant-option-item ${
+                selectedStyle.includes("Hiện đại") ? "selected" : ""
+              }`}
+              onClick={() => handleStyleChange("Hiện đại")}
+            >
+              Hiện đại
+            </li>
+
             <li
               className={`fashion-consultant-option-item ${
                 selectedStyle.includes("Cổ điển") ? "selected" : ""
@@ -226,7 +242,7 @@ const FashionConsultant = () => {
               }`}
               onClick={() => handleEventChange("Valentine")}
             >
-              Lễ tình nhân
+              Noel
             </li>
             <li
               className={`fashion-consultant-option-item ${
@@ -243,6 +259,14 @@ const FashionConsultant = () => {
               onClick={() => handleEventChange("Lễ hội")}
             >
               Lễ hội
+            </li>
+            <li
+              className={`fashion-consultant-option-item  ${
+                selectedEvent.includes("Đám cưới") ? "selected" : ""
+              }`}
+              onClick={() => handleEventChange("Đám cưới")}
+            >
+              Đám cưới
             </li>
             <li
               className={`fashion-consultant-option-item ${

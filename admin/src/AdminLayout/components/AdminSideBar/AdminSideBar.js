@@ -29,7 +29,7 @@ const AdminSideBar = () => {
         </div>
         <div className="admin-sidebar__menu">
           <div className="admin-sidebar__menu__dashboard">
-            <Link to="/" className="admin-sidebar__menu__item">
+            <Link to="/admin" className="admin-sidebar__menu__item">
               Trang chủ
             </Link>
           </div>

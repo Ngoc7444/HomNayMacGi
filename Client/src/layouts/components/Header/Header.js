@@ -27,11 +27,11 @@ const Header = () => {
         </div>
         <nav className="header__menu">
           <div className="header__menu__list">
-            <Link className="header__menu__item">Collections</Link>
+            <Link className="header__menu__item">Bộ sưu tập</Link>
             <Link to="/fashion-consultant" className="header__menu__item">
-              Fashion Consultant
+              Tư vấn ăn mặc
             </Link>
-            <Link className="header__menu__item">Calendar</Link>
+            <Link className="header__menu__item">Lịch</Link>
           </div>
         </nav>
 

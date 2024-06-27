@@ -4,6 +4,9 @@ import "./LoginForm.css";
 import Header from "../../components/Header/Header";
 import { AuthContext } from "../../../AuthContext";
 
+
+const adminEmail = "admin@gmail.com";
+const adminPassword = "1q2z3w4x";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,17 +46,25 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
+      // Kiểm tra nếu email và password trùng với tài khoản admin
+      if (email === adminEmail && password === adminPassword) {
+        const adminToken = "generate_your_admin_token_here"; // Token cho tài khoản admin
+
+        // Lưu token vào localStorage
+        localStorage.setItem("token", adminToken);
+
+        // Thực hiện đăng nhập vào trang admin
+        navigate("/admin");
+        return;
+      }
+
+      // Nếu không phải admin, tiếp tục với xử lý bình thường
       const data = await loginService(email, password);
 
       if (data.err === 0) {
         login({ email: data.email, token: data["access token"] });
         localStorage.setItem("token", data["access token"]);
-
-        if (email === "admin@gmail.com" && password === "1q2z3w4x") {
-          navigate("/admin/dashboard");
-        } else {
-          navigate("/");
-        }
+        navigate("/");
       } else {
         setError(data.mess);
       }

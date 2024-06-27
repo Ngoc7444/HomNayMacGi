@@ -4,8 +4,8 @@
     "password": null,
     "database": "propose_fs",
     "host": "127.0.0.1",
-    "dialect": "mysql" ,
-    "logging":false,
+    "dialect": "mysql",
+    "logging": false,
     "timezone": "+07:00"
   },
   "test": {
